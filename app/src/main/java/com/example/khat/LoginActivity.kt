@@ -12,5 +12,9 @@ class LoginActivity :AppCompatActivity(){
         val email = email_login.text.toString()
         val pass = Login_password.text.toString()
 
+        back_login.setOnClickListener {
+            finish()
+        }
+
     }
 }
