@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "873056452937",
+    "firebase_url": "https://khatproject-c1ed3.firebaseio.com",
+    "project_id": "khatproject-c1ed3",
+    "storage_bucket": "khatproject-c1ed3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873056452937:android:9df32e3ba16a5eb764da98",
+        "android_client_info": {
+          "package_name": "com.example.khat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873056452937-ju15t9v9rcsi0j4h8kfkgljcb09tf1vr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs8872P0VBTRoWCaIBna6KgQnGOwyLqW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873056452937-ju15t9v9rcsi0j4h8kfkgljcb09tf1vr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
