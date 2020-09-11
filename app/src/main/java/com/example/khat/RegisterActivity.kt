@@ -9,7 +9,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -25,6 +25,14 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity","try to login ")
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
+        }
+
+        select_photo_button.setOnClickListener {
+            Log.d("Main","Try to select photo")
+
+            val intent =Intent(Intent.ACTION_PICK)
+            intent.type = "images/*"
+            startActivityForResult(intent,0)
         }
     }
 
@@ -45,6 +53,12 @@ class MainActivity : AppCompatActivity() {
             .addOnCompleteListener{
                 if(!it.isSuccessful ) return@addOnCompleteListener
                 Log.d("Main","Successfully created user with uid: ${it.result?.user?.uid}")
+            }
+            .addOnFailureListener {
+                Log.d("Main","Failed to create user : ${it.message}")
+                Toast.makeText(this,"Failed to create use",Toast.LENGTH_SHORT).show()
+
+
             }
 
     }
